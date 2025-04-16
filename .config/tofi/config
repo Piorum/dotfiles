@@ -1,0 +1,16 @@
+prompt-text = ""
+width = 19%
+height = 35%
+border-width = 0
+outline-width = 0
+outline-color = #0000004C
+text-color = #7f7f7f
+padding-left = 1%
+padding-top = 1%
+num-results = 11
+font = JetBrainsMono Nerd Font
+font-size = 16
+background-color = #000000FF
+corner-radius = 10
+anchor = center
+selection-color = #DDDDDDFF

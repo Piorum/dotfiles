@@ -1,0 +1,31 @@
+* {
+  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+window#waybar {
+  background-color: rgba(0,0,0,1);
+}
+
+#custom-logo {
+  color: #ffffff;
+  padding: 0 10px;
+  padding-left: 11px;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+#clock {
+  color: #ffffff;
+  padding: 0 5px;
+}
+#workspaces * {
+  color: #ffffff;
+}
+#pulseaudio {
+  color: #ffffff;
+}
+#network {
+  padding-left: 8px;
+  padding-right: 10px;
+  color: #ffffff;
+}
