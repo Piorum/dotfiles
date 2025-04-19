@@ -1,4 +1,4 @@
-# Showcase
+# Info
 
 | Category       | Application |
 | -------------- | ----------- |
@@ -9,7 +9,7 @@
 | App Launcher   | tofi        |
 | File Manager   | ranger      |
 
-# Images
+# Showcase
 
 ![1](src/1.png)
 ![2](src/2.png)
