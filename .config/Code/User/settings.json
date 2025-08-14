@@ -14,5 +14,9 @@
     ],
     "cmake.showConfigureWithDebuggerNotification": false,
     "cmake.showOptionsMovedNotification": false,
-    "workbench.colorTheme": "Default High Contrast"
+    "workbench.colorTheme": "Default High Contrast",
+    "docker.extension.dockerEngineAvailabilityPrompt": false,
+    "github.copilot.enable": {
+        "*": false
+    }
 }

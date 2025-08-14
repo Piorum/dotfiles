@@ -13,4 +13,4 @@ font-size = 16
 background-color = #000000FF
 corner-radius = 10
 anchor = center
-selection-color = #DDDDDDFF
+selection-color = #FFFFFFFF

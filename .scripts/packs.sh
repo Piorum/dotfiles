@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pacman -Q | wc -l
+dpkg --list | wc -l

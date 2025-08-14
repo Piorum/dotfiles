@@ -4,7 +4,6 @@
   "layer": "top",
   "output": "DP-1",
   "modules-left": ["custom/logo", "clock"],
-  "modules-center": ["hyprland/workspaces"],
   "modules-right": ["pulseaudio", "network"],
 
   "reload_style_on_change": true,

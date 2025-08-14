@@ -6,6 +6,9 @@
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 
+# Dotnet
+export PATH=$HOME/.dotnet/tools:$PATH
+
 $HOME/.scripts/fastfetchl.sh
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -123,6 +126,34 @@ export PATH="$HOME/.scripts:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+      
+# --- Lazy-load NVM (Corrected and Simplified) ---
+export NVM_DIR="$HOME/.nvm"
 
+# This function will be called the first time you run a Node/NVM command.
+# It sources the real nvm.sh and then executes the command you originally wanted.
+load_nvm() {
+  # Un-alias the commands to prevent a recursive loop
+  unalias nvm node npm npx 2>/dev/null
 
-#neofetch
+  # Source the nvm script
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+  # Source the bash completion script
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+  # Now that NVM is loaded, run the original command
+  "$@"
+}
+
+# Create aliases for common commands to trigger the `load_nvm` function.
+# The function will then run the command for you.
+alias nvm='load_nvm nvm'
+alias node='load_nvm node'
+alias npm='load_nvm npm'
+alias npx='load_nvm npx'
+# Add any other global node commands you use frequently
+# alias yarn='load_nvm yarn'
+# alias pnpm='load_nvm pnpm'
+
+    
