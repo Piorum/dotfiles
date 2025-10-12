@@ -7,7 +7,7 @@
 | Notifications  | mako        |
 | Status Bar     | Waybar      |
 | App Launcher   | tofi        |
-| File Manager   | ranger      |
+| File Manager   | lf          |
 
 # Showcase
 

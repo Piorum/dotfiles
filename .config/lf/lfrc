@@ -1,0 +1,4 @@
+set previewer ~/.config/lf/lf-kitty-previewer
+set cleaner ~/.config/lf/lf-kitty-cleaner
+
+set icons true
